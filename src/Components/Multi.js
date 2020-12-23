@@ -6,7 +6,7 @@ export default function Comp({min, max}){
     const alet = parseInt(Math.random() * res) + min
 
     return (
-        <Text> O  valor de  é {alet} </Text> 
+        <Text> O valor aleatorio é {alet} </Text> 
     )
 }
 
