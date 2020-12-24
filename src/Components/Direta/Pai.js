@@ -10,7 +10,7 @@ export default (props) => {
     return (
     <View>
       <Filho a={a} b={b}/>
-      <Filho a={100} b={200}/>
+      <Filho a={a + 100} b={b + 100}/>
     </View>
  );
 };

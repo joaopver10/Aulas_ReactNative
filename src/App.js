@@ -2,19 +2,22 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Contador from './Components/Contador'
-import Botao from './Components/Botao';
-import Titulo from './Components/Titulo';
-import Primeiro from './Components/Primeiro';
-import Comp from './Components/Multi';
+import Pai from './Components/Indireta/Pai'
+//import Pai from './Components/Direta/Pai'
+//import Contador from './Components/Contador'
+//import Botao from './Components/Botao';
+//import Titulo from './Components/Titulo';
+//import Primeiro from './Components/Primeiro';
+//import Comp from './Components/Multi';
 
 export default function App() {
   return (
     <View style={styles.container}>
 
+	  <Pai/>
 
-	  
 	  {/*
+		<Pai/>
 	  
 	  <Contador inicial= {0} />
       <Botao/>
