@@ -1,8 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
-import Pai from './Components/Indireta/Pai'
+
+import UsuarioLogado from './Components/UsuarioLogado'
+//import Familia from './Components/Relacao/Familia';
+//import Membro from './Components/Relacao/Membro';
+//import ParImpar from './Components/ParImpar'
+//import ContadorV2 from './Components/Contador/ContadorV2'
+//import Pai from './Components/Indireta/Pai'
 //import Pai from './Components/Direta/Pai'
 //import Contador from './Components/Contador'
 //import Botao from './Components/Botao';
@@ -12,15 +18,28 @@ import Pai from './Components/Indireta/Pai'
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      
+      <UsuarioLogado usuario={{nome: 'Joao', email: 'joaopver@gmail.com'}} />
+      {/*  
+      <Familia>
+        <Membro nome='Vanessa' sobrenome='Silva' />
+        <Membro nome='Flavio' sobrenome='Silva' />
+      </Familia>
+    
+      <Familia>
+        <Membro nome='João' sobrenome='Pedro' />
+        <Membro nome='Flavia' sobrenome='Silva' />
+      </Familia>
+  
+  <ParImpar num={3} />
+  <ContadorV2 />
 
-	  <Pai/>
-
-	  {/*
 		<Pai/>
 	  
-	  <Contador inicial= {0} />
-      <Botao/>
+    <Contador inicial= {0} />
+    
+    <Botao/>
       
       <Titulo principal= "Cadastro" 
       secundario= "Tela principal"
@@ -32,7 +51,7 @@ export default function App() {
 			</Text>
       */}
       <StatusBar style='auto' />
-    </View>
+    </SafeAreaView>
   );
 }
 
