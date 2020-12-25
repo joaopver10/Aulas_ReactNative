@@ -3,7 +3,10 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 
-import UsuarioLogado from './Components/UsuarioLogado'
+//import DigiteNome from './Components/DigiteNome'
+//import ListaProdutosV2 from './Components/Produtos/ListaProdutosV2';
+//import ListaProdutos from './Components/Produtos/ListaProdutos'
+//import UsuarioLogado from './Components/UsuarioLogado'
 //import Familia from './Components/Relacao/Familia';
 //import Membro from './Components/Relacao/Membro';
 //import ParImpar from './Components/ParImpar'
@@ -19,13 +22,18 @@ import UsuarioLogado from './Components/UsuarioLogado'
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      
-      <UsuarioLogado usuario={{nome: 'Joao', email: 'joaopver@gmail.com'}} />
+
+
       {/*  
-      <Familia>
-        <Membro nome='Vanessa' sobrenome='Silva' />
-        <Membro nome='Flavio' sobrenome='Silva' />
-      </Familia>
+        <DigiteNome />
+        <ListaProdutosV2/>  
+        < ListaProdutos/>
+        <UsuarioLogado usuario={{nome: 'Joao', email: 'joaopver@gmail.com'}} />
+      
+         <Familia>
+          <Membro nome='Vanessa' sobrenome='Silva' />
+          <Membro nome='Flavio' sobrenome='Silva' />
+         </Familia>
     
       <Familia>
         <Membro nome='João' sobrenome='Pedro' />
@@ -58,7 +66,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
