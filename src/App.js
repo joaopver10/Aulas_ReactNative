@@ -3,6 +3,11 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 
+import Mega from './Components/mega/Mega'
+//import FlexboxV4 from './Components/Layout/FlexboxV4';
+//import FlexboxV3 from './Components/Layout/FlexboxV3';
+//import FlexboxV2 from './Components/Layout/FlexboxV2';
+//import FlexboxV1 from './Components/Layout/FlexboxV1';
 //import DigiteNome from './Components/DigiteNome'
 //import ListaProdutosV2 from './Components/Produtos/ListaProdutosV2';
 //import ListaProdutos from './Components/Produtos/ListaProdutos'
@@ -22,9 +27,14 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-
-
+      
+      <Mega/>
+      
       {/*  
+      <FlexboxV4 />
+      <FlexboxV3 />
+        <FlexboxV2 />
+        <FlexboxV1 />
         <DigiteNome />
         <ListaProdutosV2/>  
         < ListaProdutos/>
@@ -68,5 +78,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
   },
 });
