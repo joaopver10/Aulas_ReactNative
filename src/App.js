@@ -28,7 +28,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       
-      <Mega/>
+      <Mega quantDeNum={7}/>
       
       {/*  
       <FlexboxV4 />
